@@ -22,7 +22,7 @@ namespace BT4
             base.Nhap();
             Console.Write("Hệ số lương : ");
             this.heSoLuong = float.Parse(Console.ReadLine());
-            Console.Write("Phương tiện đi lại : ");
+            Console.Write("Thâm niên : ");
             this.thamNien = int.Parse(Console.ReadLine());
         }
         public override void Xuat()
@@ -31,9 +31,9 @@ namespace BT4
             Console.WriteLine("Hệ số lương : " + this.heSoLuong);
             Console.WriteLine("Thâm niên : " + this.thamNien);
         }
-        public void tinhLuong()
+        public float tinhLuong()
         {
-            Console.WriteLine("Lương : {0} ", this.heSoLuong * 1300 + this.thamNien * 100);
+            return this.heSoLuong * 1300 + this.thamNien * 100;
         }
     }
 }
