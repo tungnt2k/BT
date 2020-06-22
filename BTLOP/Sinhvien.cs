@@ -6,12 +6,12 @@ namespace BTLOP
 {
     class Sinhvien
     {
-        public string hoTen { get; set; }
-        public string maSV { get; set; }
-        public string queQuan { get; set; }
-        public string gioiTinh { get; set; }
-        public DateTime ngaySinh { get; set; }
-        public PhuongTienGiaoThong phuongTienDiLai { get; set; }
+        private  string hoTen { get; set; }
+        private  string maSV { get; set; }
+        private  string queQuan { get; set; }
+        private  string gioiTinh { get; set; }
+        private  DateTime ngaySinh { get; set; }
+        private PhuongTienGiaoThong phuongTienDiLai { get; set; }
 
         public Sinhvien()
         {
@@ -91,7 +91,7 @@ namespace BTLOP
 
         public void XuatTheoBang()
         {
-            Console.Write("{0}      {1}           {2}             {3}             {4}       ", this.maSV, this.hoTen, this.gioiTinh, this.queQuan, this.ngaySinh.ToString("dd/MM/yyyy"));
+            Console.Write("{0}           {1}           {2}             {3}             {4}       ", this.maSV, this.hoTen, this.gioiTinh, this.queQuan, this.ngaySinh.ToString("dd/MM/yyyy"));
             this.phuongTienDiLai.DiChuyen();
         }
 
